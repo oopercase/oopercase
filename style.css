@@ -1,25 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
 
 .instrument-serif-regular {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
-  .instrument-serif-regular-italic {
+.instrument-serif-regular-italic {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: italic;
-  }  
+}
 
-body    {
-    height: 100vh;
+.instrument-sans {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+html    {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1;
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: aliceblue;
+}
+
+ul {
+    padding: 0px;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+a   {
+    text-decoration: none;
+    color: grey;
+}
+
+.content    {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem 0em;
 }
 
 h2  {
